@@ -56,7 +56,7 @@ public class StepDefATM {
     }
 
     @When("I deposit {float} from ATM")
-    public void i_deposit_from_atm(double amount) throws NotEnoughBalanceException {
+    public void i_deposit_from_atm(double amount) {
         atm.deposit(amount);
     }
 
